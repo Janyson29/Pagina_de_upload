@@ -1,0 +1,107 @@
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files {
+  background: #F3F0FF;
+  border: 1px dashed #C1B2F1;
+  border-radius: 8px;
+
+  text-align: center;
+  padding: 28px 0 32px;
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files h3{
+  margin-top: 12px;
+  color: #7A5FEC;
+  font-size: 16px;
+}
+
+.drag-files p{
+  font-size: 14px;
+  color: #746e82;
+}
+
+.drag-files.dragover{
+  background: #EBE6FF;
+}
+
+
+.files {
+  margin-top:  20px;
+  display: grid;
+  gap: 12px;
+}
+
+/* BOX */
+
+.box {
+  padding: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px #EAE2FD;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.bax .icon {
+  border-radius: 4px;
+  padding: 16px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bax .info{
+  flex: 1;
+}
+
+.info .filename{
+  font-size: 14px;
+  font-weight: 700;
+  color: #575361;
+}
+
+.info .filesize {
+  color: #857E95;
+  font-weight: 500;
+  font-size: 12px;
+
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 0;
+  margin-top: 4px;
+}
+
+.bar span{
+  font-size: 12px;
+  font-weight: 500;
+  color: #9892A6;
+}
+
+.action {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #794FED;
+  cursor: pointer;
+}
